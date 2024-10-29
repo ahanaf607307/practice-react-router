@@ -8,14 +8,29 @@ import {
 import Home from './Component/Home/Home'
 import Banner from './Component/Banner/Banner'
 import Main from './Component/Main/Main'
+import Login from './Component/Banner/Login'
+import Card from './Component/Card/Card'
 const router = createBrowserRouter ([
   {
     path:'/',
     element:<Home/>,
     children:[
       {
+        path:'/login',
+        element : <Login/>
+      },
+      {
         path:'/banner',
-        element : <Banner/>
+        element : <Banner/>,
+      },
+      {
+        path:'/card',
+        element : <Card/>,
+        loader:async () => {
+          const res = await fetch('https://jsonplaceholder.typicode.com/users');
+          const data =await res.json()
+          return data
+        }
       },
       {
         path : '/main',

@@ -11,8 +11,13 @@ function Home() {
    <div className='fixed top-0 left-0 right-0 z-10'>
  <Navbar/>
    </div>
+   {/* login */}
+  
+   {/* login ends */}
+    <div className='my-20'>
     <Outlet/>
-    <div className=' ' >
+    </div>
+    <div className='' >
     <Footer />
     </div>
    </div>
