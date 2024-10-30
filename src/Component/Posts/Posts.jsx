@@ -7,7 +7,7 @@ function Posts() {
     
   return (
     <div>
-        <h1 className='text-4xl font-bold text-center'>Posts : {posts.length}</h1>
+        <h1 className='text-4xl font-bold text-center pt-10'>Posts : {posts.length}</h1>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-10'>
         {
             posts.map(post => <Post post={post} /> )

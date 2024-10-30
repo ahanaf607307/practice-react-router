@@ -9,6 +9,7 @@ import Login from "./Component/Banner/Login";
 import Card from "./Component/Card/Card";
 import Posts from "./Component/Posts/Posts";
 import PostDetails from "./Component/Posts/PostDetails";
+import Contact from "./Component/Card/Contact";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,10 +19,7 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />
       },
-      {
-        path: "/banner",
-        element: <Banner />
-      },
+      
       {
         path: "/card",
         element: <Card />,
@@ -30,6 +28,15 @@ const router = createBrowserRouter([
           const data = await res.json();
           return data;
         }
+      },
+      {
+       path: '/contact/:contactId',
+        loader:async({params}) => {
+          const res = await fetch(`https://jsonplaceholder.typicode.com/users/${params.contactId}`)
+          const data = res.json()
+          return data
+        },
+       element:<Contact/>
       },
       {
         path: "/main",

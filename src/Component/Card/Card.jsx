@@ -5,7 +5,7 @@ function Card() {
   const users = useLoaderData();
   console.log(users);
   return (
-    <div className="my-5">
+    <div className="pt-10">
       <div>
         <h1 className="text-2xl text-center">
          Data Here :  {users.length}

@@ -11,7 +11,6 @@ function Navbar() {
   <div class="text-center md:text-start">
     <ul class="menu menu-horizontal px-1 font-semibold text-gray-600">
       <li><Link to="/login">LogIn</Link></li>
-      <li><Link to="/banner">Banner</Link></li>
       <li><Link to="/card">Card</Link></li>
       <li><Link to="/main">Main</Link></li>
       <li><Link to="/posts">Posts</Link></li>
