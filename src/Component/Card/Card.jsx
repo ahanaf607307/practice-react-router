@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Cd from "./Cd";
 function Card() {
   const users = useLoaderData();
-  console.log(users);
+
   return (
     <div className="pt-10">
       <div>

@@ -1,8 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Cd({user}) {
     const{id,name , phone , email , username} = user
+    const navigate = useNavigate()
+    const handleContact = () => {
+navigate(`/contact/${id}`)
+    }
   return (
     <div>
         <div>
@@ -14,6 +18,7 @@ function Cd({user}) {
               
               <div class="card-actions justify-end">
                 <Link to={`/contact/${id}`} ><button class="btn text-white font-bold bg-teal-500">Contact Now</button></Link>
+                <button onClick={handleContact} className="btn">Btn Contact</button>
               </div>
             </div>
           </div>

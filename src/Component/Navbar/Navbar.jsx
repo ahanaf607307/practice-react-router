@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {  NavLink } from 'react-router-dom'
+import './Nav.css'
 
 function Navbar() {
   return (
@@ -8,12 +9,12 @@ function Navbar() {
   <div class="text-center md:text-start">
     <a class="btn btn-ghost text-xl font-bold">R-S</a>
   </div>
-  <div class="text-center md:text-start">
-    <ul class="menu menu-horizontal px-1 font-semibold text-gray-600">
-      <li><Link to="/login">LogIn</Link></li>
-      <li><Link to="/card">Card</Link></li>
-      <li><Link to="/main">Main</Link></li>
-      <li><Link to="/posts">Posts</Link></li>
+  <div id='navLink' class="text-center md:text-start">
+    <ul  id='sidebar' class="menu menu-horizontal px-1 font-semibold text-gray-600">
+      <li><NavLink  to="/login">LogIn</NavLink></li>
+      <li><NavLink  to="/card">Card</NavLink></li>
+      <li><NavLink  to="/main">Main</NavLink></li>
+      <li><NavLink  to="/posts">Posts</NavLink></li>
     </ul>
   </div>
 </div>

@@ -1,0 +1,4 @@
+#sidebar a.active {
+    background-color: rgb(0, 112, 112);
+    color: white;
+  }
