@@ -14,6 +14,7 @@ function Navbar() {
       <li><Link to="/banner">Banner</Link></li>
       <li><Link to="/card">Card</Link></li>
       <li><Link to="/main">Main</Link></li>
+      <li><Link to="/posts">Posts</Link></li>
     </ul>
   </div>
 </div>
